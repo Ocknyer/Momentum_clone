@@ -28,6 +28,9 @@ const quotes = [
 const quote = document.querySelector('#quote span:first-child');
 const author = document.querySelector('#quote span:last-child');
 
+quote.innerHTML = quotes[0].quote;
+author.innerHTML = quotes[0].author;
+
 setInterval(() => {
   const randomNum = Math.round(Math.random() * quotes.length);
   const todaysQuote = quotes[randomNum];
